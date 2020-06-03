@@ -7,6 +7,7 @@
       - availability:
           comment: From these 3 availability checks, only one of them has to pass...
           port: 8065 || 80 || 443
+          timeout: 30000
           status: 200
           url: /
       - reachable:
